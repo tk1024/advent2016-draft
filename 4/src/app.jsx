@@ -63,7 +63,7 @@ class MyEditor extends React.Component {
         <button onClick={this._onOriginalClick.bind(this)}>Original</button>
         <Editor editorState={this.state.editorState} onChange={this.onChange} customStyleMap={colorStyleMap} />
         <h1>HTML出力結果</h1>
-        <code>{this.output()}</code>
+        <pre>{this.output()}</pre>
       </div>
     );
   }
